@@ -118,7 +118,6 @@
     
     /* Header Component */
     .header {
-        position: block;
         top: 0;
         left: 0;
         right: 0;
@@ -136,9 +135,12 @@
     }
     
     .header__logo {
-        background: url('/images/logo.png') no-repeat left center;
-        padding-left: var(--space-16);
-        background-size: contain;
+      width: 50px; /* adjust width as needed */
+      height: auto; /* maintain aspect ratio */
+      margin-right: var(--space-1); /* optional spacing if you still have text */
+    }
+    
+    .header__title {
         font-family: var(--font-family-heading);
         font-size: 40px;
         font-weight: var(--font-weight-bold);
